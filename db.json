@@ -1,0 +1,82 @@
+{
+  "goods": [
+    {
+      "name": "21",
+      "amount": 12,
+      "status": true,
+      "id": 1
+    },
+    {
+      "name": "21",
+      "amount": 12,
+      "status": true,
+      "id": 2
+    },
+    {
+      "name": "21",
+      "amount": 12,
+      "status": false,
+      "id": 3
+    },
+    {
+      "name": "21",
+      "amount": 12,
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "qewq",
+      "amount": 12,
+      "status": false,
+      "id": 5
+    },
+    {
+      "name": "34",
+      "amount": 43,
+      "status": false,
+      "id": 6
+    },
+    {
+      "name": "sadsasdas",
+      "amount": 2,
+      "status": true,
+      "id": 7
+    },
+    {
+      "name": "у",
+      "amount": 12,
+      "status": true,
+      "id": 8
+    },
+    {
+      "name": "112",
+      "amount": 123,
+      "status": true,
+      "id": 9
+    },
+    {
+      "name": "1",
+      "amount": 2,
+      "status": false,
+      "id": 10
+    },
+    {
+      "name": "z",
+      "amount": 12,
+      "status": false,
+      "id": 11
+    },
+    {
+      "name": "арара",
+      "amount": 123,
+      "status": false,
+      "id": 12
+    },
+    {
+      "name": "яяяя",
+      "amount": 123,
+      "status": false,
+      "id": 13
+    }
+  ]
+}

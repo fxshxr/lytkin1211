@@ -1,0 +1,45 @@
+<div class="container">
+  
+    <br>
+
+    <table class="table">
+      
+        <thead>
+          <tr>
+            <th scope="col" >id</th>
+            <th scope="col">Название</th>
+            <th scope="col">Количество</th>
+            <th scope="col">Иземнить статус</th>
+            <th scope="col">Редактировать</th>
+            <td><button class="btn btn-outline-dark" (click) ="onAddGood()">Добавить покупку</button></td>
+
+          </tr>
+        </thead>
+        <tbody>
+        
+          <tr *ngFor="let good of goods | orderByName:'name'"  [ngClass] = "{green : good.status}"  >
+            <ng-container *ngIf="good.status === false">
+            
+            <th scope="row" >{{ good.id }}</th>
+            <td>{{ good.name }}</td>
+            <td>{{ good.amount }}</td>
+            <td><button class="btn btn-outline-dark" (click)="this.good.status =!this.good.status" >Именить</button></td>
+            <td><button class="btn btn-outline-dark" (click) ="onEditGood(good.id)">Редактировать</button></td>
+          </ng-container>
+          </tr>
+          <tr *ngFor="let good of goods | orderByName:'name'"    [ngClass] = "{green : good.status}"  >
+            <ng-container *ngIf="good.status === true">
+            
+            <th scope="row" >{{ good.id }}</th>
+            <td>{{ good.name }}</td>
+            <td>{{ good.amount }}</td>
+            
+            <td><button class="btn btn-outline-dark"   (click)="this.good.status =!this.good.status" >Именить</button></td>
+            <td><button class="btn btn-outline-dark" (click) ="onEditGood(good.id)">Редактировать</button></td>
+          </ng-container>
+          </tr>
+        
+          
+        </tbody>
+      </table>
+</div>

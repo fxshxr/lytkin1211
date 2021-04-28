@@ -1,0 +1,30 @@
+<div class="container">
+    <br>
+    <h1>Добавить товары в список покупок</h1>
+    <br>
+    <form [formGroup]="goodsForm">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control"  id="name" formControlName="name" placeholder="Название товара">
+          </div>
+          <div class="col">
+            <input type="number" class="form-control number" id="amount" formControlName="amount"  min="0"  placeholder="Количество">
+          </div>
+          <div class="col">
+            <label for="status">Уже куплено?</label>
+            <input type="checkbox"  id="status" formControlName="status"  >
+          </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+          <button class="btn btn-primary mr-4" [disabled]="goodsForm.invalid" (click)="onSave()">
+            Сохранить
+          </button>
+          <button class="btn btn-danger" *ngIf="id != null" (click)="onDelete()">
+              Удалить
+            </button>
+        </div>
+        </div>
+      </form>
+</div>
